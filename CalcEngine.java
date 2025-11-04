@@ -21,6 +21,7 @@ public class CalcEngine
         displayValue = 0;
         previousOperator = ' ';
         leftOperand = 0;
+        reportState("instanciation");
     }
 
     /**
@@ -65,6 +66,7 @@ public class CalcEngine
         applyPreviousOperator();
         previousOperator = '-';
         displayValue = 0;
+        reportState("end of minus");
     }
     
     /**
